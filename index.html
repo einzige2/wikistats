@@ -3,20 +3,27 @@
 
 <head>
   <title>Wiki Stats</title>
-  <link href="index.css" rel="stylesheet">
-  <script src="index.js" async></script>
+  <link href="styles/index.css" rel="stylesheet">
+  <script src="scripts/index.js" type="module" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <p>Wiki Stats</p>
+  <p style="margin: 2rem auto; text-align:center;">Wiki Stats</p>
   <br>
-  <br>
-  <div class="graph" style="height:16rem;width:16rem;">
-    <div id="graph-column">
-      <div id="graph-column-fill"></div>
+  <div class="graph-grid">
+    <div id="y-label">
+      <p style="text-align:right; padding-right:0.25rem;">edits</p>
     </div>
+    <div class="graph">
+      <graph-column data-label="anonymous" data-height="50%"></graph-column>
+      <graph-column data-label="bot" data-height="50%"></graph-column>
+      <graph-column data-label="minor" data-height="50%"></graph-column>
+      <graph-column data-label="reverted" data-height="50%"></graph-column>
+    </div>
+    <div></div>
+    <div id="x-label" style="text-align:center; width:100%;">articles</div>
   </div>
-  <button id="testbutton">Test Feature</button>
+  <button id="testbutton" style="display:none;">Test Feature</button>
 </body>
 
 </html>

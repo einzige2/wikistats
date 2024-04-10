@@ -1,0 +1,19 @@
+.graph {
+  display: block;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+
+#graph-column {
+  height: 100%;
+  width: 2rem;
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 0 0.5rem;
+}
+
+#graph-column-fill {
+  height: 50%;
+  background-color: #ff0000;
+  transition: height 1s;
+}

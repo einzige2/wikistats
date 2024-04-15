@@ -3,10 +3,6 @@ import { GraphColumn } from "./graphColumn.js";
 
 customElements.define(GraphColumn.CLASS_NAME, GraphColumn);
 
-const getFeaturedContent = async () => {
-  
-}
-
 // TESTING
 
 const testColumnAnim = () => {

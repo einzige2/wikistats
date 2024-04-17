@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Wiki Stats</title>
+  <link href="index.css" rel="stylesheet">
+  <script src="main.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <p style="margin: 2rem auto; text-align:center;">Wiki Stats</p>
+  <br>
+  <table>
+    <tr>
+      <th>Article</th>
+      <th>Edits</th>
+    </tr>
+    <tr>
+      <th>John</th>
+      <th>10000</th>
+    </tr>
+    <tr>
+      <th>Bill</th>
+      <th>1000</th>
+    </tr>
+    <tr>
+      <th>John</th>
+      <th>10000</th>
+    </tr>
+    <tr>
+      <th>Bill</th>
+      <th>1000</th>
+    </tr>
+    <tr>
+      <th>John</th>
+      <th>10000</th>
+    </tr>
+    <tr>
+      <th>Bill</th>
+      <th>1000</th>
+    </tr>
+    <tr>
+      <th>John</th>
+      <th>10000</th>
+    </tr>
+    <tr>
+      <th>Bill</th>
+      <th>1000</th>
+    </tr>
+    <tr>
+      <th>John</th>
+      <th>10000</th>
+    </tr>
+    <tr>
+      <th>Bill</th>
+      <th>1000</th>
+    </tr>
+    <tr>
+      <th>John</th>
+      <th>10000</th>
+    </tr>
+    <tr>
+      <th>Bill</th>
+      <th>1000</th>
+    </tr>
+
+  </table>
+  <div class="graph-grid" style="display:none;">
+    <div id="y-label">
+      <p style="text-align:right; padding-right:0.25rem;">edits</p>
+    </div>
+    <div class="graph">
+      <graph-column data-label="anonymous" data-height="50%"></graph-column>
+      <graph-column data-label="bot" data-height="50%"></graph-column>
+      <graph-column data-label="minor" data-height="50%"></graph-column>
+      <graph-column data-label="reverted" data-height="50%"></graph-column>
+    </div>
+    <div></div>
+    <div id="x-label" style="text-align:center; width:100%;">articles</div>
+  </div>
+  <button id="testbutton" style="display:block;">Test Feature</button>
+</body>
+
+</html>
